@@ -8,20 +8,23 @@
 ## reference
 [docs.aws](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/get-started.html)
 
-## create project
-```shell
-mvn -B archetype:generate \
- -DarchetypeGroupId=org.apache.maven.archetypes \
- -DgroupId=com.example.myapp \
- -DartifactId=myapp
-=>
-[INFO] ------------------------------------------------------------------------
-[INFO] BUILD SUCCESS
-[INFO] ------------------------------------------------------------------------
-[INFO] Total time:  01:11 min
-[INFO] Finished at: 2022-03-26T17:14:54+09:00
-[INFO] ------------------------------------------------------------------------
-```
+## new project
+1. ### create
+    ```shell
+    mvn -B archetype:generate \
+    -DarchetypeGroupId=org.apache.maven.archetypes \
+    -DgroupId=com.example.myapp \
+    -DartifactId=myapp
+    =>
+    [INFO] ------------------------------------------------------------------------
+    [INFO] BUILD SUCCESS
+    [INFO] ------------------------------------------------------------------------
+    [INFO] Total time:  01:11 min
+    [INFO] Finished at: 2022-03-26T17:14:54+09:00
+    [INFO] ------------------------------------------------------------------------
+    ```
+2. ### pom.xml
+    - copy paste from repo (If NOT edit `pom.xml`, run `mvn package` will ERR!!!)
 
 ## Write the code
 - `src/main/java/com/example/myapp/App.java` > `main(), tutorialSetup() & cleanUp()`
